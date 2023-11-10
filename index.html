@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>id Studio</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <img src="img/logo.svg" alt="logo" class="header__logo" />
+          <div class="header__content">
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li><a href="" class="header__link">Services</a></li>
+                <li><a href="" class="header__link">Portfolio</a></li>
+                <li><a href="" class="header__link">Pricing</a></li>
+              </ul>
+            </nav>
+            <div class="header__services">
+              <a href="tel:+3035550105" class="header__tel">(303) 555-0105</a>
+              <div class="header__dropdown">
+                <button class="header__dropbtn">
+                  <span>En</span>
+                  <img src="img/Polygon.svg" alt="" />
+                </button>
+                <div class="header__dropdown-content">
+                  <a href="#">EN</a>
+                  <a href="#">RU</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="header__burger">
+            <span></span>
+          </button>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__hero hero">
+          <div class="hero__content">
+            <div class="hero__container">
+              <div class="hero__box">
+                <h1 class="hero__title">We create your space better</h1>
+                <div class="hero__text">
+                  <p>
+                    Our team creates comfortable spaces for our clients. We’ve
+                    been designing your everyday life and work through great
+                    ideas since 1999.
+                  </p>
+                </div>
+                <button class="hero__btn btn">Get started</button>
+              </div>
+            </div>
+          </div>
+          <div class="hero__img">
+            <img src="img/hero/hero.jpg" alt="hero" />
+          </div>
+        </section>
+        <section class="page__about about">
+          <div class="about__container">
+            <h2 class="about__title title">
+              About
+              <br />
+              <span class="title_color">Studio</span>
+            </h2>
+            <div class="about__content">
+              <p class="about__text">
+                Interiart is an award-winning architecture and interior design
+                practice based in NYC. We work internationally on projects of
+                residential & commercial interior design that require a creative
+                approach. Our talented and experienced designers leverage their
+                knowledge and expertise to create unique and comfortable
+                interiors for you.
+              </p>
+              <p class="about__text">
+                Our team knows that interior design can be stressful for the
+                client and we do our best to make it as easy as possible. We
+                listen to your needs, ideas, and inputs. And most importantly,
+                we make it exciting and enjoyable for our clients.
+              </p>
+              <button class="about__btn" onclick="showhide()">Read more</button>
+            </div>
+          </div>
+        </section>
+        <section class="page__services services">
+          <div class="services__container">
+            <h2 class="services__title title">
+              Our <span class="title_color">Services</span>
+            </h2>
+            <div class="services__content">
+              <div class="services__item item-services">
+                <div class="item-services__img">
+                  <img src="img/services/design.svg" alt="design" />
+                </div>
+                <div class="item-services__content">
+                  <h3 class="item-services__title">INTERIOR DESIGN</h3>
+                  <p class="item-services__text">
+                    Interior design services offer a vast variety of solutions
+                    for our clients’ homes and offices.
+                  </p>
+                </div>
+              </div>
+              <div class="services__item item-services">
+                <div class="item-services__img">
+                  <img src="img/services/picture.svg" alt="picture" />
+                </div>
+                <div class="item-services__content">
+                  <h3 class="item-services__title">DECORATIVE SERVICES</h3>
+                  <p class="item-services__text">
+                    Our professional decorators will be happy to help you change
+                    your house’s inner look.
+                  </p>
+                </div>
+              </div>
+              <div class="services__item item-services">
+                <div class="item-services__img">
+                  <img src="img/services/table.svg" alt="table" />
+                </div>
+                <div class="item-services__content">
+                  <h3 class="item-services__title">SPACE PLANNING</h3>
+                  <p class="item-services__text">
+                    We create better interior experiences through our space
+                    planning services.
+                  </p>
+                </div>
+              </div>
+              <div class="services__item item-services">
+                <div class="item-services__img">
+                  <img src="img/services/pencil.svg" alt="pencil" />
+                </div>
+                <div class="item-services__content">
+                  <h3 class="item-services__title">PROJECT MANAGEMENT</h3>
+                  <p class="item-services__text">
+                    We provide proper project management as it’s one of the main
+                    success factors in interior design.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a href="" class="services__link btn">Free consultation</a>
+          </div>
+        </section>
+        <section class="page__portfolio portfolio">
+          <div class="portfolio__container">
+            <h2 class="portfolio__title title">
+              Our <span class="title_color">Portfolio</span>
+            </h2>
+            <div class="portfolio__body">
+              <div class="portfolio__tabs tabs-portfolio">
+                <button class="tabs-portfolio__btn active">ALL</button>
+                <button class="tabs-portfolio__btn">COMERCIAL</button>
+                <button class="tabs-portfolio__btn">RESIDENTIAL</button>
+                <button class="tabs-portfolio__btn">OFFICE</button>
+                <button class="tabs-portfolio__btn">OTHER</button>
+              </div>
+              <div class="portfolio__items">
+                <div class="portfolio__content content-portfolio active">
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/1.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/2.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/3.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/4.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/5.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/6.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/7.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/8.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="portfolio__content content-portfolio">
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/1.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/2.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/3.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/4.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="portfolio__content content-portfolio">
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/5.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/6.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/7.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/8.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="portfolio__content content-portfolio">
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/3.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/4.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/5.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="portfolio__content content-portfolio">
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/1.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/4.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/5.jpg" alt="" />
+                  </div>
+                  <div class="content-portfolio__item">
+                    <img src="img/portfolio/8.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <a href="" class="portfolio__link">VIEW MORE</a>
+            </div>
+          </div>
+        </section>
+        <section class="page__price price">
+          <div class="price__container">
+            <h2 class="price__title title">
+              Our <span class="title_color">Pricing</span>
+            </h2>
+            <div class="price__content">
+              <div class="price__item item-price">
+                <p class="item-price__type">Basic</p>
+                <p class="item-price__price">$25</p>
+                <p class="item-price__time">per month</p>
+                <div class="item-price__line"></div>
+                <div class="item-price__text">
+                  <p>Interior Design</p>
+                  <p>Project Discussion</p>
+                  <p>Space Planning</p>
+                  <p>Online Consultation</p>
+                </div>
+                <a href="" class="item-price__btn btn">Buy now</a>
+              </div>
+              <div class="price__item item-price">
+                <p class="item-price__type">Standart</p>
+                <p class="item-price__price">$50</p>
+                <p class="item-price__time">per month</p>
+                <div class="item-price__line"></div>
+                <div class="item-price__text">
+                  <p>Color Analysis</p>
+                  <p>Space Planning</p>
+                  <p>Home Remodeling</p>
+                  <p>3D Interior Model</p>
+                </div>
+                <a href="" class="item-price__btn btn">Buy now</a>
+              </div>
+              <div class="price__item item-price">
+                <p class="item-price__type">Premium</p>
+                <p class="item-price__price">$80</p>
+                <p class="item-price__time">per month</p>
+                <div class="item-price__line"></div>
+                <div class="item-price__text">
+                  <p>Concept Development</p>
+                  <p>Decoration Services</p>
+                  <p>Interior Architecture</p>
+                  <p>Flooring Installation</p>
+                </div>
+                <a href="" class="item-price__btn btn">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__reviews reviews">
+          <div class="reviews__container">
+            <h2 class="reviews__title title">
+              What <span class="title_color">People Say</span>
+            </h2>
+            <div class="swiper reviews-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper reviews-swiper__wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide reviews-swiper__slide reviews-slide">
+                  <div class="reviews-slide__avatar">
+                    <div class="reviews-slide__img">
+                      <img src="img/reviews/1.jpg" alt="" />
+                    </div>
+                    <div class="reviews-slide__info">
+                      <p class="reviews-slide__name">Annette Black</p>
+                      <p class="reviews-slide__job">Merchandising Associate</p>
+                      <ul class="reviews-slide__social social">
+                        <li>
+                          <a href="" class="reviews-slide__link social__link">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="reviews-slide__link social__link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="reviews-slide__link social__link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="reviews-slide__text">
+                    <p>
+                      Convallis non proin ac bibendum. At pharetra sed ultrices
+                      semper. Lectus et ornare ultrices urna in. Id non
+                      fringilla dignissim ac risus amet eget egestas vestibulum.
+                      Aliquet etiam eget nulla nulla odio vel.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews-swiper__slide reviews-slide">
+                  <div class="reviews-slide__avatar">
+                    <div class="reviews-slide__img">
+                      <img src="img/reviews/1.jpg" alt="" />
+                    </div>
+                    <div class="reviews-slide__info">
+                      <p class="reviews-slide__name">Annette Black</p>
+                      <p class="reviews-slide__job">Merchandising Associate</p>
+                      <ul class="reviews-slide__social social">
+                        <li>
+                          <a href="" class="reviews-slide__link social__link">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="reviews-slide__link social__link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="reviews-slide__link social__link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="reviews-slide__text">
+                    <p>
+                      Convallis non proin ac bibendum. At pharetra sed ultrices
+                      semper. Lectus et ornare ultrices urna in. Id non
+                      fringilla dignissim ac risus amet eget egestas vestibulum.
+                      Aliquet etiam eget nulla nulla odio vel.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews-swiper__slide reviews-slide">
+                  <div class="reviews-slide__avatar">
+                    <div class="reviews-slide__img">
+                      <img src="img/reviews/1.jpg" alt="" />
+                    </div>
+                    <div class="reviews-slide__info">
+                      <p class="reviews-slide__name">Annette Black</p>
+                      <p class="reviews-slide__job">Merchandising Associate</p>
+                      <ul class="reviews-slide__social social">
+                        <li>
+                          <a href="" class="reviews-slide__link social__link">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="reviews-slide__link social__link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="reviews-slide__link social__link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="reviews-slide__text">
+                    <p>
+                      Convallis non proin ac bibendum. At pharetra sed ultrices
+                      semper. Lectus et ornare ultrices urna in. Id non
+                      fringilla dignissim ac risus amet eget egestas vestibulum.
+                      Aliquet etiam eget nulla nulla odio vel.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews-swiper__slide reviews-slide">
+                  <div class="reviews-slide__avatar">
+                    <div class="reviews-slide__img">
+                      <img src="img/reviews/1.jpg" alt="" />
+                    </div>
+                    <div class="reviews-slide__info">
+                      <p class="reviews-slide__name">Annette Black</p>
+                      <p class="reviews-slide__job">Merchandising Associate</p>
+                      <ul class="reviews-slide__social social">
+                        <li>
+                          <a href="" class="reviews-slide__link social__link">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="reviews-slide__link social__link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="reviews-slide__link social__link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="reviews-slide__text">
+                    <p>
+                      Convallis non proin ac bibendum. At pharetra sed ultrices
+                      semper. Lectus et ornare ultrices urna in. Id non
+                      fringilla dignissim ac risus amet eget egestas vestibulum.
+                      Aliquet etiam eget nulla nulla odio vel.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination reviews-swiper__dots"></div>
+            </div>
+          </div>
+        </section>
+        <section class="page__call call">
+          <div class="call__container">
+            <h2 class="call__title title">
+              Do you have <span class="title_color">any question?</span>
+            </h2>
+            <button class="call__btn btn">order a call</button>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__info info-footer footer__item">
+            <img src="img/logo.svg" alt="" class="info-footer__logo" />
+            <div class="info-footer__text">
+              <p>
+                We are one of the leading interior design and remodeling studios
+                available for all of your residential and commercial interior
+                design needs.
+              </p>
+            </div>
+            <div class="info-footer__copy">
+              © 2023 id Studio. All Rights Reserved.
+            </div>
+          </div>
+          <div class="footer__navigation navigation-footer footer__item">
+            <h3 class="navigation-footer__title footer__title">Navigation</h3>
+            <ul class="navigation-footer__list">
+              <li><a href="" class="navigation-footer__link">About</a></li>
+              <li><a href="" class="navigation-footer__link">Services</a></li>
+              <li><a href="" class="navigation-footer__link">Portfolio</a></li>
+              <li><a href="" class="navigation-footer__link">Pricing</a></li>
+              <li>
+                <a href="" class="navigation-footer__link">Testemonials</a>
+              </li>
+            </ul>
+            <ul class="social">
+              <li>
+                <a href="" class="social__link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social__link">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social__link">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts contacts-footer footer__item">
+            <h3 class="navigation-footer__title footer__title">CONTACTS</h3>
+            <ul class="contacts-footer__items">
+              <li class="contacts-footer__item item-contacts-footer">
+                <p class="item-contacts-footer__title">ADRESS</p>
+                <a
+                  href=""
+                  class="item-contacts-footer__link item-contacts-footer__adress"
+                >
+                  3517 W. Gray St. Utica, Pennsylvania 57867
+                </a>
+              </li>
+              <li class="contacts-footer__item item-contacts-footer">
+                <p class="item-contacts-footer__title">EMAIL</p>
+                <a
+                  href="mailto:michelle.rivera@idstudio.com"
+                  class="item-contacts-footer__link item-contacts-footer__mail"
+                  >michelle.rivera@idstudio.com</a
+                >
+              </li>
+              <li class="contacts-footer__item item-contacts-footer">
+                <p class="item-contacts-footer__title">PHONES</p>
+                <div class="item-contacts-footer__tels">
+                  <a
+                    href="tel:+8085550111"
+                    class="item-contacts-footer__link item-contacts-footer__tel"
+                    >(808) 555-0111</a
+                  >
+                  <span>or</span>
+                  <a
+                    href="tel:+3035550105"
+                    class="item-contacts-footer__link item-contacts-footer__tel"
+                    >(303) 555-0105</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
